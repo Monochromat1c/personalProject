@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Fax";
+    scroll-behavior: smooth;
+    /* border: 0.5px dotted green; */
+    /* color: azure; */
+    /* background-color: aqua; */
+}
+
+.container {
+    max-width: max-content;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    height: 100svh;
+    /* grid-template-columns: .3fr 2fr; */
+    /* gap: .3svh; */
+}
+
+/* .content {
+    min-height: 100svh;
+} */
+
+/* .sidebar {
+    background-color: rgb(168, 194, 184);
+    min-width: 18svw;
+    display: grid;
+} */
+
+.sidebar-container {
+    background-color: rgb(171, 201, 189);
+    min-width: 18svw;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    font-size: 33px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    /* background-color: rgb(106, 126, 118); */
+    padding-top: 27px;
+    padding-bottom: 27px;
+    min-width: 35svh;
+    border-radius: 9px;
+    justify-content: center;
+}
+
+.links>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgb(115, 143, 131);
+    padding: 9px 9px 9px 9px;
+    width: 27svh;
+    margin: 1svh;
+    border-radius: 33px;
+    transition: background-color 1000ms ease-out, color 1000ms ease-out;
+}
+
+.links>a:hover {
+    background-color: rgb(212, 240, 229);
+    color: rgb(0, 0, 0);
+    transition: 1000ms;
+}
+
+.logout-btn {
+    text-decoration: none;
+    background-color: rgb(131, 39, 39);
+    color: rgb(255, 255, 255);
+    padding: 10px 33px 10px 33px;
+    border-radius: 22px;
+    transition: background-color 1000ms ease-out, color 1000ms ease-out;
+}
+
+.logout-btn:hover {
+    background-color: rgb(207, 54, 54);
+    color: rgb(250, 249, 249);
+    transition: 1000ms;
+}
+
+.contentContainer {
+    background-color: rgb(212, 240, 229);
+    min-width: 82svw;
+}
